@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_head" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e2e2e2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/qq_edit_login"
+                android:hint="输入城市" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="市内找" >
+            </TextView>
+
+            <AutoCompleteTextView
+                android:id="@+id/searchkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.88"
+                android:background="@drawable/qq_edit_login"
+                android:hint="输入地点" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:background="@drawable/background_button_div"
+                android:onClick="searchButtonProcess"
+                android:padding="10dip"
+                android:text="开始" />
+
+            <Button
+                android:id="@+id/map_next_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="12"
+                android:background="@drawable/background_button_div"
+                android:onClick="goToNextPage"
+                android:padding="10dip"
+                android:text="下一组数据" />
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.baidu.mapapi.map.SupportMapFragment" />
+    </LinearLayout>
+
+</LinearLayout>

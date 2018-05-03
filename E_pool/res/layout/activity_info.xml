@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BaseMapActivity" >
+
+    <LinearLayout
+        android:id="@+id/loginPanel"
+        android:layout_width="400dp"
+        android:layout_height="700dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_login_div"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="请输入您的信息"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/qq_edit_login"
+            android:ems="10"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </TextView>
+
+        <TextView
+            android:id="@+id/end"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/qq_edit_login"
+            android:ems="10"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/qq_edit_login"
+            android:ems="10"
+            android:hint="请输入人数"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/waittime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/qq_edit_login"
+            android:ems="10"
+            android:hint="请输入等待时间（分钟）"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/tick"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/qq_edit_login"
+            android:ems="10"
+            android:hint="给点小费吧（元）"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="是否拼车"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/sfpc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="是" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/subBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/background_button_div"
+                android:text="提交" />
+
+            <Button
+                android:id="@+id/retBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/background_button_div"
+                android:text="返回" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

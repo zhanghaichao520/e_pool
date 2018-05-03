@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0dip"
+            android:text="@string/info"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/btn_selector"
+            android:padding="5.0dip"
+            android:text="@string/back"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/long_button_selector"
+            android:text="去拼车"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:background="@drawable/long_button_selector"
+            android:text="清除"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/row1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="起点    "
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/start_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/userName"
+                    android:background="@drawable/input_bg"
+                    android:padding="5.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row1"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="终点"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/end_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/pwd"
+                    android:background="@drawable/input_bg"
+                    android:padding="5.0dip" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/row3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row2"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="距离"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                
+                <TextView
+                    android:id="@+id/distance_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/distance"
+                    android:background="@drawable/input_bg"
+                    android:padding="5.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row3"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/repwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="乘车人数"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <EditText
+                    android:id="@+id/count_edt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/repwd"
+                    android:background="@drawable/input_bg"
+                    android:hint="输入整数"
+                    android:inputType="text|number"
+                    android:padding="5.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row4"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/waittime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="等待时间"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <EditText
+                    android:id="@+id/waittime_edt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/waittime"
+                    android:background="@drawable/input_bg"
+                    android:hint="输入整数(min)"
+                    android:inputType="text|number"
+                    android:padding="5.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row5"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="小费        "
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <EditText
+                    android:id="@+id/tips_edt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/tips"
+                    android:background="@drawable/input_bg"
+                    android:hint="输入整数(元)"
+                    android:inputType="text|number"
+                    android:padding="5.0dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/row6"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="是否拼车"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <CheckBox
+                    android:id="@+id/ispool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/phone"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/miniTwitter_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/cat" />
+
+</RelativeLayout>

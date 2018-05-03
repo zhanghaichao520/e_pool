@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="light_blue">#5CACEE</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg">#e2e2e2</color>
+    <color name="hintColor">#686868</color>
+    <color name="ddlColor">#a3a3a3</color>
+    <color name="gray">#6e6e6e</color>
+    <color name="yellow">#eca214</color>
+
+</resources>

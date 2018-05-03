@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/main_head" />
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/title"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/setNickname"
+            android:layout_width="match_parent"
+            android:layout_height="28.0dip"
+            android:layout_alignLeft="@+id/profile_image"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/profile_image"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="爱 你"
+            android:textColor="#000000"
+            android:textSize="20.0sp" />
+
+        <com.cc.view.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/photo"
+            app:border_color="#FFffffff"
+            app:border_width="1dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:id="@+id/nameHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/nameHint"
+                android:textColor="@color/hintColor"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nameSet_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_button_selector"
+                android:text="@string/nameEdit"
+                android:textColor="@color/hintColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/setName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/nameSet_button"
+                android:layout_toRightOf="@id/nameHint"
+                android:paddingLeft="50.0dip"
+                android:text="张海超"
+                android:textColor="#555555"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:id="@+id/phoneHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/phoneHint"
+                android:textColor="@color/hintColor"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phoneSet_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_button_selector"
+                android:text="@string/nameEdit"
+                android:textColor="@color/hintColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/setPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/phoneSet_button"
+                android:layout_toRightOf="@id/phoneHint"
+                android:paddingLeft="50.0dip"
+                android:text="18279159611"
+                android:textColor="#555555"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:id="@+id/emailHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/emailHint"
+                android:textColor="@color/hintColor"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailSet_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_button_selector"
+                android:text="@string/nameEdit"
+                android:textColor="@color/hintColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/setEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/emailSet_button"
+                android:layout_toRightOf="@id/emailHint"
+                android:paddingLeft="50.0dip"
+                android:text="961876295@qq.com"
+                android:textColor="#555555"
+                android:textSize="13.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:id="@+id/carnumHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/carnumHint"
+                android:textColor="@color/hintColor"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/carnumSet_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/setting_button_selector"
+                android:text="@string/nameEdit"
+                android:textColor="@color/hintColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/setCarnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="36dp"
+                android:layout_toRightOf="@+id/carnumHint"
+                android:text="晋J PH168"
+                android:textColor="#555555"
+                android:textSize="13.0sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/credibility"
+                android:textColor="@color/hintColor"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="☆☆☆"
+                android:textColor="@color/hintColor"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/contactUS"
+                android:textColor="@color/hintColor"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="400-800-0088"
+                android:textColor="@color/hintColor"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/updateRelative"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/update_selector"
+            android:clickable="true"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="10.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/udpateCheck"
+                android:textColor="@color/hintColor"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/versionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="V1.1"
+                android:textColor="@color/hintColor"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/line" />
+    </LinearLayout>
+
+</RelativeLayout>

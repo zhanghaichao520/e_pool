@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0dip"
+            android:text="订单信息"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/r_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/btn_selector"
+            android:padding="5.0dip"
+            android:text="@string/back"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/custmer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:text="乘客1"
+        android:textColor="@android:color/black"
+        android:textSize="17.0sp" />
+
+    <ScrollView
+        android:id="@+id/group1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custmer1"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/row1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="起点    "
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/r_start_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/userName"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row1"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="终点"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/r_end_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/pwd"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row2"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="距离"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/r_distance_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/distance"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row3"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/repwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="乘客姓名"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/divername_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/repwd"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row4"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/diverphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="联系电话"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/diverphone_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/diverphone"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/custmer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group1"
+        android:text="乘客2"
+        android:textColor="@android:color/black"
+        android:textSize="17.0sp" />
+
+    <ScrollView
+        android:id="@+id/group2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custmer2"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/row6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/userName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="起点    "
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/r_start_txt2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/userName2"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row6"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/pwd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="终点"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/r_end_txt2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/pwd2"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row7"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/distance2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="距离"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/r_distance_txt2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/distance2"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row8"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/repwd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="乘客姓名"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/divername_txt2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/repwd2"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row9"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/diverphone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="联系电话"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/diverphone_txt2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/diverphone2"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group2"
+        android:text="价格"
+        android:textColor="@android:color/black"
+        android:textSize="17.0sp" />
+    <TextView
+        android:id="@+id/route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:text="路线："
+        android:textColor="@android:color/black"
+        android:textSize="17.0sp" />
+</RelativeLayout>

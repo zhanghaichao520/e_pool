@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0dip"
+            android:text="拼车成功"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/r_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/btn_selector"
+            android:padding="5.0dip"
+            android:text="@string/back"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/top"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/row1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:text="起点    "
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/r_start_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/userName"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row1"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="终点"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/r_end_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/pwd"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row2"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="距离"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/r_distance_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/distance"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row3"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/repwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="司机姓名"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/divername_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/repwd"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row4"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/diverphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="联系电话"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/diverphone_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/diverphone"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/row6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row5"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="车牌号        "
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/carnum_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/tips"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+              <RelativeLayout
+                android:id="@+id/row7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row6"
+                android:padding="5.0dip" >
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:text="价格        "
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/price_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_toRightOf="@id/price"
+                    android:padding="5.0dip"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/miniTwitter_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/cat" />
+
+</RelativeLayout>
